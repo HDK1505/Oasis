@@ -1,0 +1,154 @@
+body, h1, h2, h3, h4, h5, h6, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  header h2 {
+    font-size: 18px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #ffca28;
+  }
+  
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+  
+  section {
+    padding: 80px 0;
+  }
+  
+  section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .about-text {
+    flex: 0 0 50%;
+  }
+  
+  .about-image {
+    flex: 0 0 50%;
+    text-align: center;
+  }
+  
+  .about-image img {
+    max-width: 70%;
+    border-radius: 40%;
+  }
+  
+  .skills-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .skills-item i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .skills-item h3 {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
+  .skills-item p {
+    font-size: 16px;
+    color: #aaa;
+  }
+  
+  footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+  
+  /* Add animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .container {
+    animation: fadeIn 1s ease;
+  }
+  
+  /* Logo styling */
+  .skills-item i.fa-html5:before {
+    content: "\f13b";
+    color: #e34c26;
+  }
+  
+  .skills-item i.fa-css3-alt:before {
+    content: "\f13c";
+    color: #1572b6;
+  }
+  
+  .skills-item i.fa-js:before {
+    content: "\f3b8";
+    color: #f0db4f;
+  }
+  
+  .skills-item i.fa-java:before {
+    content: "\f4e4";
+    color: #007396;
+  }
+  
